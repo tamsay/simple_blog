@@ -1,0 +1,42 @@
+@import "vanilla-framework";
+@include vanilla;
+@include vf-base;
+@include vf-p-card;
+@include vf-p-grid;
+
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: "Ubuntu", -apple-system, "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  }
+
+  .card-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    border-top: 3px solid #a87ca0;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.15);
+
+    header{
+      p{
+        padding: 0rem 0.5rem;
+        font-weight: 450;
+      }
+    }
+
+    .body{
+      padding: 0.25rem 0.5rem 0rem 0.5rem;
+
+      .p-card__content{
+        font-style: italic;
+      }
+    }
+
+    footer{
+      margin-top: auto;
+      p{
+      padding: 0.5rem 0.5rem;
+      }
+    }
+  }
